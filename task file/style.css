@@ -185,6 +185,8 @@ color: #ffff;
     position: absolute;
     inset: 29% auto auto 6%;
     box-shadow: -1px 4px 15px 2px #0908081a;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
 }
 .hero-card {
     grid-column-gap: 10px;
@@ -203,6 +205,8 @@ color: #ffff;
     position: absolute;
     inset: 45% 9% auto auto;
     box-shadow: -1px 4px 15px 2px #0707071a;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
 }
 .hero-card._3 {
     border: .2px #e6e6e6;
@@ -214,6 +218,13 @@ color: #ffff;
     top: 335px;
     left: 89px;
     box-shadow: -1px 4px 15px 2px #1111111a;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+    
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
 }
 .hero-tiny-text-wrapper {
     grid-column-gap: 6px;
@@ -238,30 +249,6 @@ color: #ffff;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
-}
-.hero-card._1:hover{
-  -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-}
-@-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
-}
-.hero-card._2:hover{
-  -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-}
-@-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
-}
-.hero-card._3:hover{
-  -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-}
-@-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
 }
 .container.explore {
     justify-content: space-between;
@@ -1113,4 +1100,15 @@ p {
   width: 15px;
   height: auto;
 }
-
+@media screen and (max-width: 767px) {
+    .container.hero {
+        flex-direction: column;
+        margin-top: 80px;
+        padding: 20px 16px 40px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .hero {
+        padding-top: 30px;
+    }
+}
