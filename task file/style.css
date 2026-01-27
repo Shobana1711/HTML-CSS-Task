@@ -115,7 +115,7 @@ img {
 }
 .sign-up-button:hover {
   background: transparent;
-  color: black;
+  color: #ff523b;
   transition: all 0.2s ease-out;
 }
 .w-button {
@@ -165,7 +165,7 @@ img {
 .primary-button {
   border: 1px solid #ff523b;
   background-color: var(--transparent);
-  color: var(--primary-color);
+  color: #ff523b;
   border-radius: 5px;
   padding: 14px 28px;
   font-size: 18px;
@@ -357,8 +357,8 @@ img {
   font-size: 12px;
 }
 .secondary-button {
-  border: 1px solid #ff523b;
-  background-color: #ff523b;
+  border: 1px solid #fa7436;
+  background-color: #fa7436;
   border-radius: 5px;
   padding: 14px 28px;
   transition: all 0.15s ease-in;
@@ -484,6 +484,7 @@ option {
   max-width: none;
   margin-top: 10px;
   margin-bottom: 24px;
+  font-family: Volkhov, sans-serif;
   font-size: 48px;
   line-height: 54px;
 }
@@ -506,6 +507,7 @@ p {
   opacity: 0.7;
   position: absolute;
   inset: 0% 6% auto auto;
+
 }
 .steps-container {
   grid-column-gap: 30px;
@@ -551,7 +553,8 @@ p {
 }
 
 .deals-section h2 {
-  font-size: 32px;
+  font-size: 48px;
+  font-family: Volkhov, sans-serif;
   margin-bottom: 10px;
 }
 
@@ -560,8 +563,13 @@ p {
 }
 .subtitle {
   color: #777;
-  font-size: 14px;
   margin-bottom: 40px;
+  
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    align-items: center;
 }
 .exclusive-deals {
   background: #fffaf7;
@@ -695,7 +703,8 @@ p {
 }
 
 .title-wrap h2 {
-  font-size: 36px;
+  font-size: 48px;
+  font-family: Volkhov, sans-serif;
   margin-bottom: 10px;
 }
 
@@ -705,7 +714,7 @@ p {
 
 .title-wrap p {
   color: #777;
-  font-size: 14px;
+  font-size: 16px;
   max-width: 420px;
   margin: auto;
 }
@@ -788,6 +797,13 @@ p {
   justify-content: space-between;
   color: #777;
   font-size: 14px;
+}
+
+.country-wrapper {
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+    align-items: center;
+    display: flex;
 }
 .testimonial {
   background-color: #f7f8fc;
@@ -897,8 +913,12 @@ p {
 }
 
 .blog-header h2 {
-  font-size: 42px;
-  font-weight: 700;
+  font-size: 48px;
+  font-family: Volkhov, sans-serif;
+  line-height: 54px;
+  max-width: none;
+    margin-top: 10px;
+    margin-bottom: 24px;
 }
 
 .blog-header h2 span {
@@ -930,13 +950,13 @@ p {
 
 .blog-card h3 {
   margin: 16px 0 8px;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .blog-card .date {
   color: #999;
-  font-size: 10px;
+  font-size: 12px;
 }
 .blog-card img:hover {
   transform: scale(0.9);
@@ -1129,6 +1149,7 @@ input {
 .w-icon-nav-menu:before {
   content: "";
 }
+
 
 /* Mobile view  */
 
@@ -1679,3 +1700,4 @@ input {
     flex-flow: wrap;
   }
 }
+
